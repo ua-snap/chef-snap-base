@@ -1,0 +1,18 @@
+{
+  "id": "crstephenson",
+  "comment": "Craig Stephenson",
+  "uid": 12858,
+  "gid": 206,
+  "home": "/home/crstephenson",
+  "groups": [
+    "staff",
+    "software",
+    "sudoers"
+  ],
+  "forcepass": true,
+  "password": "$1$QihHNuWA$Ykh6pf1IOJTgi24xrSsAw1",
+  "shell": "/bin/bash",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDbMvgbn/NLIkbH2Gxt3bs9yxLhIw93Q4+CZte+Ku4nqcExVT3a4AkGaKjK1TxUlTdWuceq1lFFJci7Nl948bsIlZFc3Uf6XkttTyHeMpk8PU39y21BYSv6ATjFNxBGXwbSHGBUGL5G4SQKNikcwk29xb3qlzArIRZKBgdd4lG6f99owlkRXYLJuCNykHaJx8DOKGj2MTzTgLvHWSIlH7CX8mu3ODTFL/Ii4ICYY6hfzKbL4BUgtSjuosR9IsRt0v2qmqvWjck7NJ5hRuSUXb4lqhoN+PZQg8Djo92CmU4+PAXCbEDVFakw+mg9JmBuEMjbMUn2UP4Svhq859VgQP+ZO7f2CDHGxbWoJrCjqfau5mDJxTF31Kijpoe+ZcKM07seEQcO5OJGLhI1oXzIvKT6eqDfepKAyzfE3ikDXIYvDsapehvmBV56TjpUFuixhzFhS7oez1wyK7hocZ+Tw2DMr7TwwGisIRqT114OXsNRbR6i8p3bnOmP2NFtph/k9dgXtWsquhGjo8FA5c8UDWDujyQlWWkA2Zl3iUH5o+NeF1rw4Y1srBWlcFsPCtZrhJjj8H1qDRsfD1lmSnr0FoYmwdLsR/PiypPmjG1XFbc+lvFwNJtMnL4ZCG+fHiV3gI/djRoEoOhgwb2WwwoB2RlaHVJuRX/OH8oEIL2iAHFPbw== crstephenson@alaska.edu"
+  ]
+}

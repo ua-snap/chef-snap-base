@@ -1,0 +1,12 @@
+{
+  "id": "cparr4",
+  "comment": "Charlie Parr",
+  "uid": 17152783,
+  "gid": 17375414,
+  "home": "/home/UA/cparr4",
+  "groups": ["snap_users"],
+  "shell": "/bin/bash",
+  "password": "$1$6It2V7KA$H5hG.9fM382Rr/56PlE5/0",
+  "forcepass": true,
+  "ssh_keys": ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDDKu8NgsXieUFPYX8atoJhmb3Ov5Yz95n7DPj7NfqejPryGyBSy0Yd07ZjeGqv9ka+p5WX9mtoqsc8dQwILTvS8WyHsNdCBSoD7luvvrauQm2RS4mRLORg0FzdQyLvTA51KGpkpuDlTYao5ECLAwbXL6afnxALTDEnZyahQhP/54gTYSYgIZ36+UjuQ2awhemuuOGSJC1fZ/ImEhe2D4LgXVXVhpQ2wLYCwR2IvsAcEbVBBbQhCwb3gSjd9kSk1Kng2LEJ1Vo0CSa1n2iQ8ltlhhRjaRjy6WHy0oJQH9jxWoW4wz9eMGmEABlyfhRIpZ2f6ooecyyctkb7TCjMaHdE6FBFIQ3W0AeRQDuQ72plj4LKFiPOaPAVn3H/3k60Iofb+0P2k+PtJixLbgNLd1voEyMb6qpsTzqoecargmOOfVEPZ9eL+G+XWfXMpGvkspJw9Rcp0HGXfPXzZpJK2cAzy5PYwr6SCnlc8/XlOOAXOa9iI2HgpNk6hD+NEKRBN6E= cparr@Charless-MacBook-Pro.local"]
+}

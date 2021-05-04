@@ -1,0 +1,11 @@
+{
+  "id": "jsdabney",
+  "comment": "Jeremiah Dabney",
+  "uid": 3181,
+  "gid": 206,
+  "home": "/home/jsdabney",
+  "groups": ["rcs-staff","sudoers"],
+  "forcepass": true,
+  "password": "$6$5PmmmVOm$byqo19Q1rCMNyMHv38SOnJ8EaJQbIDze4ii9cTrrq578iIgOx1JQ.wTHAJCUgsTesDQOfel4nJPyNrQlI0kjX1",
+  "shell": "/bin/bash"
+}

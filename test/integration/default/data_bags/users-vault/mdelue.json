@@ -1,0 +1,9 @@
+{
+  "id": "mdelue",
+  "comment": "Mike Delue",
+  "uid": 18035471,
+  "gid": 17375414,
+  "home": "/home/UA/mdelue",
+  "groups": ["snap_users"],
+  "shell": "/bin/bash"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "snap-read",
+  "dn": "cn=snap-read,ou=SNAP,ou=UAF,dc=ua,dc=ad,dc=alaska,dc=edu",
+  "password": "snapreadBINDaccount"
+}

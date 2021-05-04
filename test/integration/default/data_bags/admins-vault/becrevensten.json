@@ -1,0 +1,12 @@
+{
+  "id": "becrevensten",
+  "comment": "Bruce Crevensten",
+  "uid": 16823661,
+  "gid": 17375414,
+  "home": "/home/becrevensten",
+  "groups": ["snap_users","sudoers"],
+  "shell": "/bin/bash",
+  "password": "$6$KbLb.wYY$x9j4Gb3RtUKAmXdg2dZzWG52WkThrufirGMsB0kmGt6ZoorzBr2uiYaCIyGu/ZybH7d0SfotkNyOOSgQtb4nl1",
+  "forcepass": true,
+  "ssh_keys": ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDy0SBHUSEzo1KA3IinWVEzPXQM/4giYgdkoi/IAFkTPAj+eBwqubRLIAik/vTf9lRwoZFqkf9vywCwdu/Ozis6Cw5wTAMw1+LYLLkmWvf4mW5amgT45DonaMDF8PNkeWI2nTbMVC/YXYyiN9oMITW0s+60XO9lcuTXtTJ27P1uYirqT7NxVBW6IWdmrPOtVRIJEXNpg2cXEoMsya4lNLE/FmAId1f3FjXp67zKscpBbW2bLrPZhfOseYmGI3oTQHdNLwg8va2xEFvg/N0ovD6Jv7aGOVKrHAILCO6/0epeZPT8kqYHDCMw59IUQr/OW+xnyws+jTW5HPJLVDAMqdWpaI65s5DowAlaTPwX9yv+klA0iC9sIYVX8bEUPF4rMisjqmUe4VdV5xaLfIeNuDjevCOIN8pHXV2x6YnVq0ZdozHeoCcVFxe5cSHktCfQU30tppveLg4bIbUbpz/kXeDRYJGJbEPwE0mRumyreesVY2eZIYZ9V1tgmjfmclw27KHPLi4TnYfoGFOnbXavNZ6OxNm38brdmY8EI0wxnCG7zwcg8lbtw9g9FasMkCgsz9Ss0oos284kkQfRuz70x0JAFLFqBfBXwBwPFRDk7zpUsj5XIQVC85Jo/nsFgiajNwX7Ni/wd7eCWjQgl39nt8HO1tAO7ju9JS3vlEuOn6ct/w== bruce.crevensten@gmail.com"]
+}
