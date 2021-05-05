@@ -1,4 +1,4 @@
-# snap-base
+# SNAP Base Cookbook
 
 ## Download ChefDK
 
