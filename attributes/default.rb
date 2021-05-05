@@ -9,6 +9,12 @@ override['firewall']['allow_established'] = true
 override['firewall']['allow_loopback'] = true
 override['firewall']['allow_icmp'] = false
 
+# Make the default mode for created user directories be 700
+node.default['user']['home_dir_mode'] = '0750'
+
+# Do not create run ssh_keygen if no SSH key listed in data_bag
+node.default['user']['ssh_keygen'] = false
+
 # Make it so everyone in the sudoers group has sudo
 node.default['authorization']['sudo']['groups'] = ['sudoers']
 

@@ -21,6 +21,12 @@ group 'sudoers' do
   action :create
 end
 
+group 'snap_users' do
+  gid 17375414
+  append true
+  action :create
+end
+
 directory '/home' do
   owner 'root'
   group 'root'
@@ -30,39 +36,6 @@ directory '/home' do
 end
 
 include_recipe 'user::default'
-
-bash 'add jsdabney user' do
-  user 'root'
-  cwd '/tmp'
-  code <<-EOH
-  getent passwd jsdabney >> /etc/passwd
-  EOH
-  not_if "grep jsdabney /etc/passwd"
-  ignore_failure true
-  action :run
-end
-
-bash 'add rltorgerson user' do
-  user 'root'
-  cwd '/tmp'
-  code <<-EOH
-  getent passwd rltorgerson >> /etc/passwd
-  EOH
-  not_if "grep rltorgerson /etc/passwd"
-  ignore_failure true
-  action :run
-end
-
-bash 'add crstephenson user' do
-  user 'root'
-  cwd '/tmp'
-  code <<-EOH
-  getent passwd crstephenson >> /etc/passwd
-  EOH
-  not_if "grep crstephenson /etc/passwd"
-  ignore_failure true
-  action :run
-end
 
 # Start an exception block in case the admins-vault does not exist in
 # testing or production.
