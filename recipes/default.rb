@@ -11,7 +11,7 @@ package ['epel-release']
 timezone 'America/Anchorage'
 
 # Basic package installs
-package %w(bind-utils deltarpm yum-utils ethtool git lsof net-tools pciutils psmisc screen strace tcpdump vim wget) do
+package %w(bind-utils unzip deltarpm yum-utils ethtool git lsof net-tools pciutils psmisc screen strace tcpdump vim wget) do
   action :install
 end
 
