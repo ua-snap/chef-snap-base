@@ -15,9 +15,4 @@ networks.each do |network|
     source network
     command :allow
   end
-  firewall_rule "ICMP from #{network}" do
-    protocol :icmp
-    source network
-    command :allow
-  end
 end
