@@ -10,6 +10,10 @@ package ['epel-release']
 # link to Alaska timezone
 timezone 'America/Anchorage'
 
+selinux_state "SELinux Permissive" do
+  action :permissive
+end
+
 # Basic package installs
 package %w(bind-utils unzip deltarpm yum-utils ethtool git lsof net-tools pciutils psmisc screen strace tcpdump vim wget) do
   action :install
