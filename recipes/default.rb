@@ -20,7 +20,7 @@ package %w(bind-utils unzip deltarpm yum-utils ethtool git lsof net-tools pciuti
 end
 
 resolver_config '/etc/resolv.conf' do
-  nameservers ['137.229.15.5','137.229.5.191']
+  nameservers ['137.229.5.193','137.229.5.191','8.8.8.8']
   domain 'snap.uaf.edu'
   search ['snap.uaf.edu','rcs.alaska.edu','alaska.edu']
 end
