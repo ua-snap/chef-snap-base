@@ -4,11 +4,6 @@
 #
 # Copyright:: 2021, The Authors, All Rights Reserved.
 
-# add EPEL repository in AWS
-execute 'install EPEL' do
-  command 'sudo amazon-linux-extras install epel'
-end
-
 # link to Alaska timezone
 timezone 'America/Anchorage'
 
