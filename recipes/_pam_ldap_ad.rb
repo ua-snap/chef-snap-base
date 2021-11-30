@@ -39,6 +39,14 @@ cookbook_file '/etc/pam.d/password-auth' do
   manage_symlink_source true
 end
 
+cookbook_file '/etc/pam.d/system-auth' do
+  source 'system-auth'
+  owner 'root'
+  group 'root'
+  mode '0644'
+  manage_symlink_source true
+end
+
 cookbook_file '/etc/pki/ca-trust/source/anchors/incommon_CA.crt' do
   source 'incommon_CA.crt'
   owner 'root'
