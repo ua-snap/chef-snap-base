@@ -8,6 +8,7 @@ override['firewall']['firewalld']['permanent'] = true
 override['firewall']['allow_established'] = true
 override['firewall']['allow_loopback'] = true
 override['firewall']['allow_icmp'] = false
+override['firewall']['ubuntu_iptables'] = true
 
 # Make the default mode for created user directories be 700
 node.default['user']['home_dir_mode'] = '0750'
