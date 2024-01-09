@@ -5,7 +5,7 @@
 # Copyright:: 2021, The Authors, All Rights Reserved.
 
 # link to Alaska timezone
-timezone 'America/Anchorage'
+# timezone 'America/Anchorage'
 
 # Basic package installs
 package %w(bind-utils unzip deltarpm yum-utils ethtool git lsof net-tools pciutils psmisc screen strace tcpdump vim wget) do

@@ -1,0 +1,14 @@
+{
+  "id": "jdpaul3",
+  "comment": "Josh Paul",
+  "uid": 17622695,
+  "gid": 17375414,
+  "home": "/home/UA/kmredilla",
+  "groups": [
+    "snap_users"
+  ],
+  "shell": "/bin/bash",
+  "password": "$1$MWTXEIQ2$7DHUQXC.6AszzUDZ1fvcN0",
+  "forcepass": true,
+  "ssh_keys": []
+}
