@@ -8,7 +8,7 @@ include_recipe 'firewall::default'
 
 firewall 'default'
 
-networks = ['137.229.0.0/16','199.165.64.0/18','172.16.0.0/10','10.0.0.0/8']
+networks = ['137.229.0.0/16','199.165.64.0/18','172.16.0.0/10','10.0.0.0/8','100.20.166.131/32']
 networks.each do |network|
   firewall_rule "SSH from #{network}" do
     port 22

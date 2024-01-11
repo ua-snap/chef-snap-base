@@ -4,7 +4,7 @@ maintainer_email 'uaf-snap-sys-team@alaska.edu'
 license 'All Rights Reserved'
 description 'Installs/Configures snap-base'
 long_description 'Installs/Configures snap-base'
-version '0.1.44'
+version '0.1.45'
 chef_version '>= 14.0'
 
 depends 'chef-client'
