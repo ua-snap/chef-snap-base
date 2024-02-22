@@ -1,6 +1,6 @@
 ---
 driver:
-  name: vagrant
+  name: docker
 
 provisioner:
   name: chef_zero
@@ -8,20 +8,27 @@ provisioner:
   product_version: 14.13.11
   install_strategy: :always
   always_update_cookbooks: true
-  
+
 verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-18.04
+  - name: centos-bob
+    driver_config:
+      image: "centos:7"
+      platform: centos
+
+transport:
+  name: docker
 
 suites:
   - name: default
     data_bags_path: "test/integration/default/data_bags"
     run_list:
-        - recipe[snap-base::ubuntu]
-        - recipe[snap-base::_default_firewall]
+      - recipe[snap-base::aws-default]
     verifier:
       inspec_tests:
         - test/integration/default
     attributes:
+      chef_client:
+        init_style: "systemd"

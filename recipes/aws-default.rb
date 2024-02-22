@@ -13,8 +13,8 @@
 # end
 
 # Sets up 30 minute default Chef client runs
-include_recipe 'chef-client::config'
-include_recipe 'chef-client::service'
+# include_recipe 'chef-client::config'
+# include_recipe 'chef-client::service'
 
 # Sets up NTPd to keep clock in sync
 # include_recipe 'ntp::default'
