@@ -19,12 +19,14 @@ end
 
 # Execute the Miniconda installer
 execute 'install_miniconda' do
-  command "/bin/bash /tmp/miniconda.sh -b -p #{miniconda_install_dir}"
-  not_if { ::File.exist?("#{miniconda_install_dir}/bin/conda") }
-  action :run
-end
-
-execute 'install_prefect' do
-    command "#{miniconda_install_dir}/bin/pip install -U prefect"
+    command "/bin/bash /tmp/miniconda.sh -b -p #{miniconda_install_dir}"
+    not_if { ::File.exist?("#{miniconda_install_dir}/bin/conda") }
     action :run
-end
+    notifies :run, 'execute[install_prefect]', :immediately
+  end
+  
+  # Install or upgrade Prefect in the base environment
+  execute 'install_prefect' do
+    command "#{miniconda_install_dir}/bin/pip install -U prefect"
+    action :nothing
+  end
