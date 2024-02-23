@@ -19,17 +19,16 @@ cookbook_file '/etc/profile.d/nvm.sh' do
     mode '0644'
     action :create
 end
+
+# Source NVM to make it available in the current shell
+# execute 'source_nvm' do
+#     command '. /etc/profile.d/nvm.sh'
+#     action :run
+# end
   
 # Install Node.js and pm2 using NVM
-execute 'install_nodejs_npm' do
-    command 'nvm install lts/hydrogen && npm install -g pm2'
-    not_if 'which node'
+execute 'install_nodejs_npm_and_pm2' do
+    command '. /etc/profile.d/nvm.sh && nvm install lts/gallium && npm install -g pm2'
+    not_if 'which npm'
     action :run
-    notifies :run, 'execute[source_nvm]', :immediately
-end
-  
-# Source NVM to make it available in the current shell
-execute 'source_nvm' do
-    command 'source /etc/profile.d/nvm.sh'
-    action :nothing
 end

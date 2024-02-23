@@ -21,8 +21,16 @@ git '/usr/local/prefect' do
     action :checkout
   end
 
+directory '/usr/local/pm2' do
+    owner 'snapdata'   
+    group 'snap_users'   
+    mode '0755'          
+    recursive true       
+    action :create  
+end
+
 # Create PM2 configuration file
-template 'pm2_configuration' do
+template 'pm2.config.js' do
   path '/usr/local/pm2/pm2.config.js'
   source 'pm2.config.js.erb'
   variables(

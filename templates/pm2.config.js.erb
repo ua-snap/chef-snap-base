@@ -1,6 +1,6 @@
 module.exports = {
     apps: [
-        <% node['pm2']['apps'].each do |app| %>
+        <% @apps.each do |app| %>
         {
             name: '<%= app['name'] %>',
             script: '<%= app['script'] %>',
