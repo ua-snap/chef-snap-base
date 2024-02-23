@@ -38,33 +38,3 @@ template 'pm2.config.js' do
   )
   action :create
 end
-
-ruby_block 'list_directory_contents' do
-    block do
-      directory_path = '/usr/local/prefect'
-  
-      if Dir.exist?(directory_path)
-        Dir.foreach(directory_path) do |entry|
-          Chef::Log.info("File: #{entry}")
-        end
-      else
-        Chef::Log.warn("Directory #{directory_path} does not exist.")
-      end
-    end
-    action :run
-  end
-
-  ruby_block 'list_directory_contents' do
-    block do
-      directory_path = '/usr/local/pm2'
-  
-      if Dir.exist?(directory_path)
-        Dir.foreach(directory_path) do |entry|
-          Chef::Log.info("File: #{entry}")
-        end
-      else
-        Chef::Log.warn("Directory #{directory_path} does not exist.")
-      end
-    end
-    action :run
-  end
