@@ -20,7 +20,7 @@ end
 # Execute the Miniconda installer
 execute 'install_miniconda' do
     command "/bin/bash /tmp/miniconda.sh -b -p #{miniconda_install_dir}"
-    not_if { ::File.exist?("#{miniconda_install_dir}/bin/conda") }
+    not_if { ::File.exist?("#{miniconda_install_dir}/bin/python") }
     action :run
     notifies :run, 'execute[install_prefect]', :immediately
   end
