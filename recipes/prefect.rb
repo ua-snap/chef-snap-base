@@ -8,9 +8,7 @@ include_recipe 'snap-base::_miniconda_installer'
 include_recipe 'snap-base::_install_pm2'
 
 # Determine the FQDN of the node
-# hostname = node['fqdn']
-
-hostname = "gs.mapventure.org"
+hostname = node['fqdn']
 
 # Load the data bag item corresponding to the FQDN
 pm2_apps_config = data_bag_item('prefect', hostname)
