@@ -4,12 +4,12 @@
     "apps": [
         {
             "name": "update_smokey_bear",
-            "script": "/usr/local/prefect/smokey-bear/smokey_bear_layer.py",
+            "script": "prefect/smokey_bear/smokey_bear_layer.py",
             "interpreter": "/opt/miniconda3/bin/python"
         },
         {
             "name": "update_snow_cover",
-            "script": "/usr/local/prefect/smokey-bear/snow_cover_layer.py",
+            "script": "prefect/smokey_bear/snow_cover_layer.py",
             "interpreter": "/opt/miniconda3/bin/python"
         }
     ]

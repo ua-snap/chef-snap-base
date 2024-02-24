@@ -27,6 +27,6 @@ execute 'install_miniconda' do
   
   # Install or upgrade Prefect in the base environment
   execute 'install_prefect' do
-    command "#{miniconda_install_dir}/bin/pip install -U prefect"
+    command "#{miniconda_install_dir}/bin/pip install prefect==2.14.2 paramiko"
     action :nothing
   end
