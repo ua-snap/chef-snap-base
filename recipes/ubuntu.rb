@@ -22,8 +22,5 @@ end
 include_recipe 'chef-client::config'
 include_recipe 'chef-client::service'
 
-# Sets up NTPd to keep clock in sync
-include_recipe 'ntp::default'
-
 include_recipe 'snap-base::_admins'
 include_recipe 'snap-base::_snap_users'

@@ -8,7 +8,7 @@ include_recipe 'snap-base::_miniconda_installer'
 include_recipe 'snap-base::_install_pm2'
 
 # Determine the FQDN of the node
-hostname = node['fqdn']
+hostname = node['fqdn'].nil? ? node['name'] : node['fqdn']
 
 # Load the data bag item corresponding to the FQDN
 pm2_apps_config = data_bag_item('prefect', hostname)
@@ -62,7 +62,7 @@ end
 
 # Use the flag to conditionally execute the pm2 start command
 execute 'run_prefect_scripts' do
-  command '. /etc/profile.d/nvm.sh && nvm use lts/gallium && sudo -u snapdata pm2 start pm2.config.js'
+  command '. /etc/profile.d/nvm.sh && nvm use lts/gallium && . /opt/miniconda3/bin/activate && prefect config set PREFECT_API_URL=https://prefect.earthmaps.io/api && sudo -u snapdata pm2 start pm2.config.js'
   cwd '/usr/local/pm2'
   action :run
   only_if { app_not_running }

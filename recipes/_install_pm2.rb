@@ -4,13 +4,22 @@
 #
 # Copyright:: 2024, The Authors, All Rights Reserved.
 
- nvm_install_dir = '/usr/local/nvm'
+nvm_install_dir = '/usr/local/nvm'
+
+ directory '/usr/local/nvm' do
+    owner 'root'   
+    group 'root'   
+    mode '0755'          
+    recursive true       
+    action :create  
+end
 
 execute 'install_nvm' do
-    command 'export NVM_DIR=#{nvm_install_dir} && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | NVM_DIR=$NVM_DIR bash'
-    not_if { ::File.exist?('/usr/local/nvm') } # Add a guard to avoid reinstallation
+    command "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | NVM_DIR=#{nvm_install_dir} bash"
+    not_if { ::File.exist?("#{nvm_install_dir}/nvm.sh") }
     action :run
   end
+  
   
 cookbook_file '/etc/profile.d/nvm.sh' do
     source 'nvm.sh'

@@ -1,0 +1,21 @@
+{
+    "id": "datacubes.earthmaps.io",
+    "git_branch": "main",
+    "apps": [
+        {
+            "name": "annual_mean_dtr",
+            "script": "prefect/rasdaman/annual_mean_dtr.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "annual_mean_pr",
+            "script": "prefect/rasdaman/annual_mean_pr.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "annual_mean_snowfall",
+            "script": "prefect/rasdaman/annual_mean_snowfall.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        }
+    ]
+}
