@@ -1,6 +1,6 @@
 {
     "id": "datacubes.earthmaps.io",
-    "git_branch": "main",
+    "git_branch": "prefect_updates",
     "apps": [
         {
             "name": "annual_mean_dtr",
@@ -15,6 +15,61 @@
         {
             "name": "annual_mean_snowfall",
             "script": "prefect/rasdaman/annual_mean_snowfall.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "annual_mean_tas",
+            "script": "prefect/rasdaman/annual_mean_tas.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "beetle_risk",
+            "script": "prefect/rasdaman/beetle_risk.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "crrel_gipl_outputs",
+            "script": "prefect/rasdaman/crrel_gipl_outputs.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "degree_days_below_zero",
+            "script": "prefect/rasdaman/degree_days_below_zero.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "design_freezing_index",
+            "script": "prefect/rasdaman/design_freezing_index.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "design_thawing_index",
+            "script": "prefect/rasdaman/design_thawing_index.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "dot_precip",
+            "script": "prefect/rasdaman/dot_precip.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "freezing_index",
+            "script": "prefect/rasdaman/freezing_index.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "heating_degree_days",
+            "script": "prefect/rasdaman/heating_degree_days.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "jan_min_mean_max_tas",
+            "script": "prefect/rasdaman/jan_min_mean_max_tas.py",
+            "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "july_min_mean_max_tas",
+            "script": "prefect/rasdaman/july_min_mean_max_tas.py",
             "interpreter": "/opt/miniconda3/bin/python"
         }
     ]

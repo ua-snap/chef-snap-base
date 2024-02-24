@@ -48,7 +48,7 @@ app_not_running = false
 # Iterate over each app defined in pm2_apps_config
 pm2_apps_config['apps'].each do |app|
   # Run the pm2 list command and capture the output
-  pm2_list_output = Mixlib::ShellOut.new("sudo -u snapdata pm2 list").run_command.stdout
+  pm2_list_output = Mixlib::ShellOut.new(". /etc/profile.d/nvm.sh && nvm use lts/gallium && sudo -u snapdata pm2 list").run_command.stdout
 
   # Check if the app name is listed and its status is "online"
   app_running = pm2_list_output.each_line.any? { |line| line.include?(app['name']) && line.include?('online') }

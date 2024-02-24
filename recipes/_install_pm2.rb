@@ -16,7 +16,7 @@ end
 
 execute 'install_nvm' do
     command "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | NVM_DIR=#{nvm_install_dir} bash"
-    not_if { ::File.exist?("#{nvm_install_dir}/nvm.sh") }
+    not_if { ::File.exist?("#{nvm_install_dir}/install.sh") }
     action :run
   end
   
