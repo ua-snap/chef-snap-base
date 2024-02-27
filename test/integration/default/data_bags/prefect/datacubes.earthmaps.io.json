@@ -71,6 +71,11 @@
             "name": "july_min_mean_max_tas",
             "script": "prefect/rasdaman/july_min_mean_max_tas.py",
             "interpreter": "/opt/miniconda3/bin/python"
+        },
+        {
+            "name": "thawing_index",
+            "script": "prefect/rasdaman/thawing_index.py",
+            "interpreter": "/opt/miniconda3/bin/python"
         }
     ]
 }
