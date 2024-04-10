@@ -13,7 +13,7 @@ package %w(unzip ethtool git lsof net-tools pciutils psmisc screen strace tcpdum
 end
 
 resolver_config '/etc/resolv.conf' do
-  nameservers ['137.229.5.193','137.229.5.191', '8.8.8.8']
+  nameservers ['8.8.8.8']
   domain 'snap.uaf.edu'
   search ['snap.uaf.edu','rcs.alaska.edu','alaska.edu']
 end

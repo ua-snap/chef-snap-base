@@ -17,7 +17,7 @@ git '/usr/local/prefect' do
     repository 'https://github.com/ua-snap/prefect.git'
     revision pm2_apps_config['git_branch']
     action :sync
-  end
+end
 
 directory '/usr/local/pm2' do
     owner 'snapdata'   
