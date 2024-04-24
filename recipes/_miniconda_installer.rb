@@ -13,6 +13,7 @@ miniconda_install_dir = '/opt/miniconda3'
 # Download the Miniconda installer
 remote_file '/tmp/miniconda.sh' do
   source miniconda_url
+  ssl_verify_mode :verify_none
   mode '0755'
   action :create
 end
