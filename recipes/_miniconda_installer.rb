@@ -10,12 +10,14 @@ miniconda_url = 'https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
 # Define the installation directory
 miniconda_install_dir = '/opt/miniconda3'
 
-# Download the Miniconda installer
-remote_file '/tmp/miniconda.sh' do
-  source miniconda_url
-  ssl_verify_mode :verify_none
+execute 'download_miniconda' do
+  command "curl -o /tmp/miniconda.sh --insecure #{miniconda_url}"
+  action :run
+end
+
+
+file '/tmp/miniconda.sh' do
   mode '0755'
-  action :create
 end
 
 # Execute the Miniconda installer
