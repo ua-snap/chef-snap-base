@@ -4,9 +4,15 @@
   "uid": 4918,
   "gid": 206,
   "home": "/home/rltorgerson",
-  "groups": ["rcs-staff","sudoers"],
+  "groups": [
+    "snap_users",
+    "sudoers"
+  ],
   "shell": "/bin/bash",
   "password": "$1$TLm9xsLK$ADHBdyY9hwHrAZeWhAgpG/",
   "forcepass": true,
-  "ssh_keys": ["ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAwDazo8LedIMyHTDyYyUMU/sR05TPbnIwM0r2yEdbW7udScWTv8OwzQSeUsE/Vdzye/5iEaOCJ/Ln5OTIshCuJGjx9R5gj87IPEVx3EJUyWuoV13Nd+PMpT1CCwGVfHsiOXayS5lNJjk8XP0XGQb90JCQpYEVFn6hSBWMJMhJx84DcrzxAmd2J7GEGXing80AmrHCJLZ5Vt7rat2g72SaiajgybKakqKdGY8ioKWyiS7pWyeqNYicvLha9S15v0jZWABVwUed0aH9ZOIt5mJhkTD00FeJAVKEXscTQv/qDp9pA69MqzPDVg7ZrqNX3xKIRR3OgA75ASYo1I2THywxAw== torgerso@greatgray-e0.arsc.edu", "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyRlbrDyfBmePziD9H5UKgTl6ujnhuOfLNfqGpm28wxEgkdBAuPP+rNL1srzmIrqhpPX0R3rWB0bgf9SFtrxi7EoUAHT+VaHxNc9l/y2d1y4RCmg44pjNtI8lJD5tOm6DqQMX+5VPzWMyFS1gs8GJobOUSXMOhhMyWbWs5yVlUnCV3185l6CFrB2HEKr/pQ5uAh+Z3dM3oBSYoiQgJvDjOCdup5ufW2Gh6ZMTmb0c0vi9uq18uENQL9DeEjQXmucLAxBTW3osj1L/ZrLOhyKrREOWjbiTpITgN9TeV+xJK2I8PW0884MIdgYLPcg5ZBfSHJ59vVwYlSoy+Oyfl8kVP rltorgerson@ognip"]
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAwDazo8LedIMyHTDyYyUMU/sR05TPbnIwM0r2yEdbW7udScWTv8OwzQSeUsE/Vdzye/5iEaOCJ/Ln5OTIshCuJGjx9R5gj87IPEVx3EJUyWuoV13Nd+PMpT1CCwGVfHsiOXayS5lNJjk8XP0XGQb90JCQpYEVFn6hSBWMJMhJx84DcrzxAmd2J7GEGXing80AmrHCJLZ5Vt7rat2g72SaiajgybKakqKdGY8ioKWyiS7pWyeqNYicvLha9S15v0jZWABVwUed0aH9ZOIt5mJhkTD00FeJAVKEXscTQv/qDp9pA69MqzPDVg7ZrqNX3xKIRR3OgA75ASYo1I2THywxAw== torgerso@greatgray-e0.arsc.edu",
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyRlbrDyfBmePziD9H5UKgTl6ujnhuOfLNfqGpm28wxEgkdBAuPP+rNL1srzmIrqhpPX0R3rWB0bgf9SFtrxi7EoUAHT+VaHxNc9l/y2d1y4RCmg44pjNtI8lJD5tOm6DqQMX+5VPzWMyFS1gs8GJobOUSXMOhhMyWbWs5yVlUnCV3185l6CFrB2HEKr/pQ5uAh+Z3dM3oBSYoiQgJvDjOCdup5ufW2Gh6ZMTmb0c0vi9uq18uENQL9DeEjQXmucLAxBTW3osj1L/ZrLOhyKrREOWjbiTpITgN9TeV+xJK2I8PW0884MIdgYLPcg5ZBfSHJ59vVwYlSoy+Oyfl8kVP rltorgerson@ognip"
+  ]
 }

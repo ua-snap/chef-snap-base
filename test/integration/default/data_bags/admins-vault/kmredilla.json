@@ -1,0 +1,18 @@
+{
+  "id": "kmredilla",
+  "comment": "Kyle Redilla",
+  "uid": 18004062,
+  "gid": 17375414,
+  "home": "/home/UA/kmredilla",
+  "groups": [
+    "snap_users",
+    "sudoers"
+  ],
+  "shell": "/bin/bash",
+  "password": "$1$ThHN/aPW$U7ak28ayRlUnlJ4FZJ5FQ1",
+  "forcepass": true,
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVRJNp3s2JUfiyvCCxKAeOf0q8yFzt6BRFZIOArYSyaPsw5KS94YcdDzfMnTPEQOwuiPlsbWHTTbCK4aQLbeDKRjjAjmjZzs2xeWHujjNlJRiGw8FWDEAbNKUnaWALc7bt8iosbjfYyYdRiaz4mN433+n4w4yLahZsBvXvoGwcrAqlm+nEviuT+L8/ukC4Q+QZh/g1kGmW57G8pYC2Ywjei9z/j/I4ifBnku4Dyp8vrmDKD/Prgi3ePBXwa67yjaSVG4be9Swf8vcr3Faprdeyj2WSrJ1qbBxKyc7JDJpEnko6lp/q+OztliCr3fzdGxJyaKzXAsEwsrljvZBX34+1 kmeanskeal@DESKTOP-MRH6KEF",
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDhMxOcYErAnqWTKtrRtN16c3l9A9d/LjVIs6KHDDbivvmv2IU8WO3o/jgrca0Q5nX7qnQzG0f9+hZMAAnH7bMQiMu0sh2z4v+XGzQOZb6PuGGSR6h7d0nPxySTe+yQUIj0AUPWg14ZS/sDMkYodBxJy1+BHe9JnXjV9kbaDT4C6F3HQQA1ZwGNJT9D8mj+LKwlO8Lf034lGpUHcxRqRq+ZTf9NZraUo0r9R8tSA9fPuJ9Tf3AEW1wUmMMMsjvFII8kqMoP1MCGrJbTdD9j9S51llBbpjtpv4KTslhSQagyS8YFI9FZPeSjbix2X0DkRy4P0m4RHCVwDMmU1BO3AauRrlMAbUsE/Fzozonu/AbeMuDyejPCiqIrsOXZ5BthUu3JfEzkRy5ouhnsaLCNvnkTTvxb5IL6thFSR6So2aH0D3sVL2Te7GmQ1CXPRsqS5AsB80ht4zb0JEAD+UC3Jb5F0JgJXDxr2yHEcbbklB3KYOMShHUHdsMLySpQ/gpP93kwNAbLYxinqRdH/0Mb9GTXFZWHMkM71kDOUuPNHyJjGMKkv+vdaA53hLpJl7xFqyMXJHKtmjzDm3/N9fOUWrnpPP4Uw8UTdRXR2THVOEFi7sKCmtPpuDewIR0Hd5lvP+yN+g8bu5iWSUdc65CFMalalJMWK1jzSbSsoQrIbRMcLw== kmredilla@alaska.edu"
+  ]
+}
