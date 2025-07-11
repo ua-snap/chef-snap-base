@@ -27,6 +27,10 @@ sub vcl_recv {
     if (req.url ~ "^/fire/.*") {
         return (pass);
     }
+
+    if (req.url ~ "^/seaice/enddate/") {
+        return (pass);
+    }
 }
 
 sub vcl_backend_response {
@@ -34,8 +38,6 @@ sub vcl_backend_response {
     #
     # Here you clean the response headers, removing silly Set-Cookie headers
     # and other mistakes your backend does.
-    #set beresp.grace = 24h;
-    #set beresp.keep = 24h;
     set beresp.ttl = 104w;
 
     if (beresp.status == 500 || beresp.status == 502 || beresp.status == 503 || beresp.status == 504) {
