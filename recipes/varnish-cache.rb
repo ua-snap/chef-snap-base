@@ -104,13 +104,24 @@ directory '/etc/nginx' do
 end
 
 # copy Nginx configuration file for Varnish proxying
-template '/etc/nginx/nginx.conf' do
-    source 'varnish-nginx.conf.erb'
-    owner 'root'
-    group 'root'
-    mode '0644'
-    action :create
-    end
+template '/etc/nginx/sites-available/varnish' do
+  source 'varnish-nginx.conf.erb'
+  owner 'root'
+  group 'root'
+  mode '0644'
+  notifies :restart, 'service[nginx]', :delayed
+end
+
+link '/etc/nginx/sites-enabled/varnish' do
+  to '/etc/nginx/sites-available/varnish'
+  notifies :restart, 'service[nginx]', :delayed
+end
+
+file '/etc/nginx/sites-enabled/default' do
+  action :delete
+  only_if { ::File.exist?('/etc/nginx/sites-enabled/default') }
+  notifies :restart, 'service[nginx]', :delayed
+end
 
 service 'nginx' do
   action [:enable, :start]
