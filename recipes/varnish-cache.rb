@@ -4,9 +4,14 @@
 #
 # Copyright:: 2025, The Authors, All Rights Reserved.
 
-domain_name = node['fqdn']
+domain_name = node.name
+node.default['set_fqdn'] = domain_name
 admin_email = 'uaf-snap-sys-team@alaska.edu'
 cert_path = "/etc/letsencrypt/live/#{domain_name}/fullchain.pem"
+
+# Set hostname 
+include_recipe 'hostname::default'
+
 
 # install varnish
 apt_update 'update' do
@@ -44,8 +49,8 @@ directory '/etc/systemd/system/varnish.service.d' do
 end
 
 # create systemd service file for varnish
-cookbook_file '/etc/systemd/system/varnish.service.d/override.conf' do
-    source 'varnish.service'
+template '/etc/systemd/system/varnish.service.d/override.conf' do
+    source 'varnish.service.erb'
     owner 'root'
     group 'root'
     mode '0644'

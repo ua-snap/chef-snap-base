@@ -10,3 +10,5 @@ ExecStart=/usr/sbin/varnishd \
   -p feature=+http2 \
   -f /etc/varnish/default.vcl \
   -s file,/var/lib/varnish/api.cache,35G
+
+  ExecReload=/usr/share/varnish/varnishreload -n /var/lib/varnish/<%= node['fqdn'] %>
