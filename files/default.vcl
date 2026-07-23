@@ -2,7 +2,7 @@ vcl 4.0;
 
 # Default backend definition. Set this to point to your content server.
 backend default {
-    .host = "52.39.174.198";
+    .host = "44.253.23.23";
     .port = "80";
     .between_bytes_timeout = 900s;
     .first_byte_timeout = 900s;
@@ -31,6 +31,10 @@ sub vcl_recv {
     if (req.url ~ "^/seaice/enddate/") {
         return (pass);
     }
+
+    if (req.url ~ "^/landslide.*") {
+        return (pass);
+    }
 }
 
 sub vcl_backend_response {
@@ -38,6 +42,8 @@ sub vcl_backend_response {
     #
     # Here you clean the response headers, removing silly Set-Cookie headers
     # and other mistakes your backend does.
+    #set beresp.grace = 24h;
+    #set beresp.keep = 24h;
     set beresp.ttl = 104w;
 
     if (beresp.status == 500 || beresp.status == 502 || beresp.status == 503 || beresp.status == 504) {
